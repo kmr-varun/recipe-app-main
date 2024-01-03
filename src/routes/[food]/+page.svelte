@@ -9,7 +9,7 @@ const recipe  = data;
 let recips;
 
 onMount(async () => {
-  const response = await fetch('http://localhost:5000/data/get');
+  const response = await fetch('https://recipe-backend-omega.vercel.app/data/get');
   const jsonData = await response.json();
   recips = jsonData;
 });
