@@ -21,7 +21,7 @@ let recipeStat = "Error";
 async function sendData() {
   try {
     recipeStat = "Error";
-    const response = await fetch('http://localhost:5000/data/set', {
+    const response = await fetch('https://recipe-backend-omega.vercel.app/data/set', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
